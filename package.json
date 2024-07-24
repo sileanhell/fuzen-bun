@@ -1,0 +1,32 @@
+{
+  "name": "fuzen",
+  "version": "2.0.0",
+  "description": "High performance HTTP & WEBSOCKET server with a simple-to-use API powered by Bun.",
+  "author": "CARZI & AWGsh",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sileanhell/fuzen.git"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src --ext ts --exec tsc",
+    "prepublishOnly": "rimraf dist && tsc",
+    "test": "bun run prepublishOnly && bun test"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.6",
+    "nodemon": "^3.1.4",
+    "rimraf": "^5.0.7",
+    "selfsigned": "^2.4.1",
+    "typescript": "^5.5.2"
+  }
+}
