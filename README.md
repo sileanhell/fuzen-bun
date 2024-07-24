@@ -1,14 +1,13 @@
 <div align="center">
 <img src="https://i.imgur.com/GpACQET.png" width="200" />
 <p>
-<a href="https://npmjs.com/package/fuzen"><img src="https://img.shields.io/npm/types/fuzen?color=%23B38BEA" /></a>
-<a href="https://npmjs.com/package/fuzen"><img src="https://img.shields.io/npm/v/fuzen?color=%23B38BEA" /></a>
-<a href="https://npmjs.com/package/fuzen"><img src="https://img.shields.io/npm/d18m/fuzen?color=%23B38BEA" /></a>
+<a href="https://npmjs.com/package/fuzen-bun"><img src="https://img.shields.io/npm/v/fuzen-bun?color=%23B38BEA" /></a>
+<a href="https://npmjs.com/package/fuzen-bun"><img src="https://img.shields.io/npm/d18m/fuzen-bun?color=%23B38BEA" /></a>
 </p>
 
 <br />
 <p align="center">
-<b>FUZEN</b> is a high performance HTTP & WEBSOCKET server with a simple-to-use API powered by
+<b>FUZEN BUN</b> is a high performance HTTP & WEBSOCKET server with a simple-to-use API powered by
 <a href="https://bun.sh/">Bun</a>.
 </p>
 </div>
@@ -29,13 +28,13 @@
 ### ⚙️ Installation
 
 ```sh
-bun add fuzen
+bun add fuzen-bun
 ```
 
 ### 🤖 Basic usage example
 
 ```ts
-import { Fuzen } from "fuzen";
+import { Fuzen } from "fuzen-bun";
 
 const server = new Fuzen({ server: { port: 8080 } });
 
@@ -48,8 +47,8 @@ server.listen();
 
 ### 👷 Advanced examples
 
-Currently, all examples can be found here:
-[examples](https://github.com/sileanhell/fuzen/tree/main/examples)
+You can see the examples in our 
+[tests](https://github.com/sileanhell/fuzen-bun/tree/main/tests).
 
 ## 🤝 Contributing
 
